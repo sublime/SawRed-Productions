@@ -1,0 +1,50 @@
+
+html, body {font-family: arial, "lucida console", sans-serif; margin: 0; padding: 0; font-size: 12px; background-color: #222328;color:#746A4C;}
+img {border: 0;}
+h1 {font-size: 2pc;}
+h2, h3, h4, h5, h6 {}
+a, a:visited {font-weight: bold; color: #AD9E72; text-decoration: none;}
+a:hover {color:#746A4C;background-color: #222328;}
+.clear {width: 100%; height: 1px; margin-left: auto; margin-right: auto; clear: both; color: #AD9E72;}
+input, select {background-color: #746A4C; border:0;color:#222328;margin:2px;}
+option { background-color: #746A4C;}
+#header{ margin-left:auto; margin-right:auto;position:relative; width: 80%;}
+.banner { margin-left:auto; margin-right:auto;position:relative;width:468px;}
+
+#nav {margin-left: auto; margin-right:auto;position:relative;font-size:1.2em;text-transform:uppercase;font-weight:bold;padding-right:25px;float:left;}
+#nav  a{padding-right:25px;}
+#nav  a:hover{padding-right:25px;color:#746A4C;background-color: #222328;}
+.switch {text-align:right;font-weight:700;}
+/* Wraps the 3 Columns */
+#wrapper{width: 80%;position:relative;margin-left:auto;margin-right:auto;}
+
+/* L/R Blocks & Content */
+#leftcolumn {float:left;width:20%}
+.leftblocks {float:left; width:100%;}
+#rightcolumn {float:right;width:20%}
+.rightblocks {float:right; width:100%;}
+#mainmenu a, #usermenu a {display: block;}
+
+/*Center Blocks*/
+#centercolumn{width:60%;position:relative;float:left;}
+#topblocks {position: relative; width:100%}
+.topleft {width: 33%;float:left;}
+.topcenter {width: 100%;float:left;}
+.topright {width: 33%; float:right;}
+#bottomblocks {position: relative; width:100%}
+.botleft {width: 33%;float:left;}
+.botcenter {width: 100%;float:left;}
+.botright {width: 33%; float:right;}
+
+div.block_title {font-weight: bold; text-transform: uppercase; font-size: 1.1em;border-bottom: 1px dotted #746A4C; margin: 5px; padding-top: 6px;}
+div.block_content {margin: 7px;}
+div#copy {text-align:right; width:99%;font-size:9px;text-transform:uppercase;}
+div#footer {border-top: 1px dotted #746A4C;}
+div.footer {text-align:center;margin-bottom:15px;}
+
+/*Styling for tables*/
+td.even {  border-top:1px dotted #746A4C;border-right:1px dotted #746A4C;border-bottom:1px dotted #746A4C;}
+td.odd { border-left:1px dotted #746A4C;}
+tr.odd td { border-bottom: 1px dotted #746A4C; border-top:1px dotted #746A4C;border-right:1px dotted #746A4C;}
+tr.even td { border-right:1px dotted #746A4C;}
+td.head {}

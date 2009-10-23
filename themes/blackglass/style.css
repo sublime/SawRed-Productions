@@ -1,0 +1,234 @@
+html {}
+body {
+	font-family: Verdana;	
+	color: #bbb;
+	margin: 0;	
+	padding: 0;	
+	font-size: 10px;
+	background: url(images/blackglass_1.gif) repeat;
+}
+
+hr {
+	color: #BBB; 
+	height:1px;
+}
+
+a {
+	color: #1fc7db; 
+	text-decoration: none; 
+	font-weight: bold; 
+	background-color: transparent;
+}
+	
+a:hover {
+	color: #1fc7db;
+}
+#Main {
+background-color: #000;
+}
+h1 {}
+h2 {}
+h3 {}
+h4 {}
+h5 {}
+
+.wrapper {
+width: 794px;
+}
+ul {
+	margin: 0px;
+	padding: 0px;
+	list-style: square inside;
+	text-align: left;
+	color: #777;
+	line-height: 18px;
+}
+li {font-family: Verdana;
+	color: #777;
+}
+li a{font-family: Verdana;
+	font-size: 9px;
+}
+
+
+textarea, select, input  {
+	font-family: Verdana;
+	background-color: #000;
+	color: #bbb;
+	font-size: 9px;
+	border-top: 1px solid #bbb;
+	border-right: 1px solid #777;
+	border-left: 1px solid #bbb;
+	border-bottom: 1px solid #777;
+	margin-top: 1px;
+}
+
+textarea {
+	width: 100%;
+	overflow: auto;
+}
+
+
+TR, TD {
+	font-family: Verdana, Tahoma, Arial;
+	font-size: 10px;
+	color: #bbb;
+	padding: 0px; vertical-align: top;
+}
+
+.head_table {
+	width: 794px;
+	height: 120px;
+	text-align:center;
+}
+
+.nav_table {
+	width: 794px;
+	height: 20px;
+}
+.nav_links {
+	padding-top: 10px;
+	text-align: center;
+	color: #bbb;
+	text-transform: uppercase;
+}
+.nav_links a {
+	padding-right: 25px;
+	padding-top: 10px;
+	text-align: center;
+	color: #bbb;
+	text-transform: uppercase;
+}
+.nav_links a:hover {
+	padding-right: 25px;
+	padding-top: 10px;
+	text-align: center;
+	color: #777;
+	text-transform: uppercase;
+}
+
+
+
+/*Left Block Loop*/
+td#leftcolumn, td#rightcolumn, td#centerCcolumn, td#centerBCcolumn, td#centerLcolumn,
+td#centerBLcolumn, td#centerRcolumn, td#centerBRcolumn {
+	font-size:9px;
+	background-color: transparent;
+	padding-right: 5px;
+	color: #777;
+}
+td#leftcolumn div.blockTitle, td#rightcolumn div.blockTitle,
+td#centerCcolumn div.blockTitle, td#centerBCcolumn div.blockTitle,
+td#centerLcolumn div.blockTitle, td#centerBLcolumn div.blockTitle,
+td#centerRcolumn div.blockTitle, td#centerBRcolumn div.blockTitle {
+	font-family: verdana, arial;
+	font-size: 10px;
+	color: #777;
+	text-align: center;
+	font-weight: bold;
+	padding-right: 2px;
+	padding-top: 8px;
+	border-bottom: 4px solid #151515;
+}
+td#leftcolumn div.blockContent, td#rightcolumn div.blockContent, td#centerCcolumn div.blockContent,
+td#centerBCcolumn div.blockContent, td#centerLcolumn div.blockContent, td#centerBLcolumn div.blockContent,
+td#centerRcolumn div.blockContent, td#centerBRcolumn div.blockContent {
+	color: #bbb;
+	font-size: 11px;
+	padding-top: 5px;
+	padding-bottom: 8px;
+	font-size: 11px;
+	border-bottom: 1px dotted #151515;
+}
+
+#footer {
+	margin-top: 6px;
+}
+
+.odd {
+font-size: 12px;
+border-left: 1px solid #151515;
+border-right: 1px solid #0d0d0d;
+border-top: 1px solid #151515;
+border-bottom: 1px solid #0d0d0d;
+}
+.even{
+font-size: 12px;
+border-left: 1px solid #151515;
+border-right: 1px solid #0d0d0d;
+border-top: 1px solid #151515;
+border-bottom: 1px solid #0d0d0d;
+}
+
+tr.head td {
+border-left: 1px solid #151515;
+border-right: 1px solid #0d0d0d;
+border-top: 1px solid #151515;
+border-bottom: 0px solid #0d0d0d;
+font-size: 12px;
+background-color: #0d0d0d;
+}
+
+.comText {
+font-family: verdana, arial;
+font-size: 13px;
+}
+
+.comUserStat {
+font-family: verdana, arial;
+font-size: 13px;
+font-weight: 700;
+}
+.comUserRankText {
+font-family: verdana, arial;
+font-size: 14px;
+font-weight: 700;
+}
+.xoopsCode {
+overflow: auto;
+border: 1px solid #151515;
+margin: 5px;
+padding: 5px;
+}
+
+.xoopsQuote {
+overflow: auto;
+border: 1px solid #151515;
+margin: 5px;
+
+}
+
+td.head {
+background-color: #0d0d0d;
+border-left: 1px solid #151515;
+border-right: 1px solid #0d0d0d;
+border-top: 1px solid #151515;
+border-bottom: 1px solid #0d0d0d;
+}
+
+tr.even td {
+font-size: 12px;
+border-left: 1px solid #151515;
+border-right: 1px solid #0d0d0d;
+border-top: 1px solid #151515;
+border-bottom: 1px solid #0d0d0d;
+}
+
+
+tr.odd td {
+font-size: 12px;
+border-left: 1px solid #151515;
+border-right: 1px solid #0d0d0d;
+border-top: 1px solid #151515;
+border-bottom: 1px solid #0d0d0d;
+}
+
+#usermenu a, #mainmenu a {
+background-color: transparent;
+display: block;
+padding-bottom: 3px;
+}
+
+.xbanner {
+margin-top: 30px;
+}

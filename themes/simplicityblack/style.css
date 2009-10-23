@@ -1,0 +1,386 @@
+body {
+background-image : url(images/body.gif);
+background-repeat : repeat-x;
+background-color : #000000;
+color : #898989;
+background-color : #000000;
+margin : 0;
+padding : 0;
+}
+a {
+color : #c8aa5d;
+text-decoration : none;
+font-weight : bold;
+background : transparent;
+}
+a:hover {
+color : #c8aa5d;
+}
+a:active {
+color : #c8aa5d;
+}
+div#content {
+text-align : left;
+padding : 8px;
+color : #898989;
+}
+div.errorMsg {
+text-align : center;
+font-weight : bold;
+padding : 10px;
+background : #000000;
+color : #898989;
+}
+div.resultMsg {
+color : #898989;
+text-align : center;
+border-top : 1px solid silver;
+border-left : 1px solid silver;
+font-weight : bold;
+border-right : 1px solid #666666;
+border-bottom : 1px solid #666666;
+padding : 10px;
+background : #000000;
+}
+div.xoopsCode, div.xoopsQuote {
+background-color : #898989;
+border : 1px inset #c8aa5d;
+font-family : "Courier New", Courier, monospace;
+padding : 0 3px 3px 3px;
+overflow : auto;
+color : #000000;
+}
+form {
+margin : 0 0 0 0;
+color : #c8aa5d;
+}
+textarea, select, input {
+font-size : 10px;
+color : #c8aa5d;
+border : 1px solid #898989;
+margin-bottom : 4px;
+vertical-align : middle;
+background : #000000;
+padding : 2px;
+}
+#message, #hometext, #bodytext {
+text-align : left;
+}
+textarea, select, input.formButton {
+color : #c8aa5d;
+font-family : Arial, Hevlvetica, sans-serif;
+text-align : center;
+background-color : transparent;
+font-size : 11px;
+font-weight : bold;
+border : 1px solid #c8aa5d;
+width : auto;
+padding : 0 5px;
+margin : 1px;
+vertical-align : middle;
+}
+textarea, select, input:hover {
+background : #000000;
+color : #898989;
+}
+li {
+margin-left : 2px;
+list-style : square inside;
+color : #000000;
+}
+table {
+font : 11px Verdana;
+}
+table td {
+padding : 0;
+border-width : 0;
+vertical-align : top;
+font : 11px Verdana;
+}
+.main {
+width : 802px;
+background-color : #000000;
+border-bottom : 1px solid #898989;
+border-left : 1px solid #898989;
+border-right : 1px solid #898989;
+}
+table#Main2 {
+width : 100%;
+}
+.logo {
+border-bottom : 1px solid #898989;
+}
+td#centercolumn {
+padding-right : 8px;
+padding-left : 8px;
+padding-top : 5px;
+border-bottom : 1px solid #898989;
+border-right : 1px solid #898989;
+border-left : 1px solid #898989;
+}
+.blockcent {
+background : url(images/cblock_04.gif);
+}
+.blockcentl {
+background : url(images/cblock_07.gif);
+}
+.blockcentr {
+background : url(images/cblock_09.gif);
+}
+.blockcentb {
+background : url(images/cblock_11.gif);
+}
+.blockbak {
+background-color : #898989;
+}
+div.cblockTitle {
+background-color : transparent;
+font-size : 12px;
+margin-top : 10px;
+font-weight : bold;
+color : #c8aa5d;
+}
+div.blockContent {
+padding : 3px;
+margin-left : 2px;
+margin-right : 3px;
+margin-bottom : 2px;
+color : #000000;
+}
+div.blockTitle, div.blockTitle, div.blockTitle {
+padding : 13px 3px 5px 2px;
+color : #c8aa5d;
+font-weight : bold;
+font-size : 11px;
+}
+td#leftcolumn {
+width : 180px;
+padding-top : 10px;
+padding-left : 5px;
+}
+td#leftcolumn div.blockContent {
+padding : 3px;
+color : #000000;
+}
+td#leftcolumn div.blockTitle {
+padding : 13px 3px 5px 2px;
+color : #c8aa5d;
+font-weight : bold;
+font-size : 11px;
+}
+td#loginboxes {
+color : #272727;
+width : 40%;
+text-align : left;
+vertical-align : middle;
+padding-left : 5px;
+font-weight : bold;
+font-size : 90%;
+white-space : nowrap;
+padding : 0% 0% 0% 0%;
+}
+td#mainmenu a, td#usermenu a {
+display : block;
+color : #000000;
+font-size : 11px;
+padding : 3px 5px;
+font-weight : normal;
+text-decoration : none;
+background-color : transparent;
+}
+td#mainmenu a.highlight, td#usermenu a.highlight {
+display : block;
+color : #000000;
+font-size : 11px;
+padding : 3px 5px;
+background-color : transparent;
+}
+td#mainmenu a.menuSub, td#usermenu a.menuSub {
+padding-left : 9px;
+}
+td#mainmenu a:hover, td#usermenu a:hover {
+display : block;
+color : #c8aa5d;
+font-size : 11px;
+}
+td#rightcolumn {
+width : 180px;
+padding-top : 10px;
+padding-right : 5px;
+background-color : #000000;
+}
+td#rightcolumn div.blockContent {
+padding : 3px;
+}
+td#rightcolumn div.blockTitle {
+padding : 13px 3px 5px 2px;
+color : #c8aa5d;
+font-weight : bold;
+font-size : 11px;
+}
+td#search {
+width : 95%;
+text-align : right;
+vertical-align : middle;
+padding-right : 10px;
+}
+th {
+color : #666666;
+padding : 2px;
+vertical-align : middle;
+font-family : Verdana, Arial, Helvetica, sans-serif;
+}
+ul {
+margin : 2px;
+padding : 2px;
+list-style : decimal inside;
+text-align : left;
+}
+ul.circle {
+list-style-type : disc;
+margin : 0;
+}
+.comDate {
+font-weight : normal;
+font-style : italic;
+font-size : smaller;
+}
+.comDateCaption {
+font-weight : bold;
+font-style : normal;
+}
+.comText {
+padding : 2px;
+}
+.comTitle {
+font-weight : bold;
+margin-bottom : 2px;
+}
+.comUserRank, .comUserImg {
+margin : 2px;
+}
+.comUserRankText {
+font-size : 10px;
+font-weight : bold;
+}
+.comUserStat {
+font-size : 10px;
+color : #898989;
+font-weight : bold;
+border : 1px solid silver;
+margin : 2px;
+padding : 2px;
+background : transparent;
+}
+.comUserStatCaption {
+font-weight : normal;
+color : #c8aa5d;
+}
+.comUserStatus {
+margin-left : 2px;
+margin-top : 10px;
+color : #0053a6;
+font-weight : bold;
+font-size : 10px;
+}
+.even, tr.even td {
+padding : 1px;
+background : transparent;
+border : 1px solid #898989;
+color : #898989;
+}
+.head, tr.head td {
+padding : 1px;
+font-weight : bold;
+background : transparent;
+border : 1px solid #898989;
+color : #898989;
+}
+.html .NavMenu td {
+position : relative;
+}
+.item {
+margin-bottom : 8px;
+background-color : transparent;
+color : #898989;
+}
+.itemAdminLink, .itemPermaLink {
+font-size : 10px;
+}
+.itemBody {
+padding : 5px;
+}
+.itemHead {
+padding : 10px 3px 3px;
+color : #898989;
+}
+.itemInfo, .itemFoot {
+text-align : right;
+padding : 3px;
+}
+.itemStats, .itemPoster, .itemPostDate {
+font-size : 9px;
+}
+.itemText {
+margin-top : 1px;
+margin-bottom : 1px;
+}
+.itemTitle a {
+font-size : 11px;
+font-weight : bold;
+color : #898989;
+}
+.odd, tr.odd td {
+padding : 2px;
+background : transparent;
+color : #898989;
+border : 1px solid #898989;
+}
+.outers {
+border : 1px solid #898989;
+}
+.redirect_style1 {
+font-weight : bold;
+font-size : 12px;
+text-align : center;
+}
+.redirect_style2 {
+font-size : 10px;
+text-align : center;
+}
+.section .item {
+margin-bottom : 0;
+}
+.title_msg {
+font-weight : bold;
+text-align : left;
+}
+.blockmidt {
+background : url(images/blocks_02.gif);
+}
+.blockmidb {
+background : url(images/blocks_10.gif);
+}
+.blockmidl {
+background : url(images/blocks_04.gif);
+}
+.blockmidr {
+background : url(images/blocks_06.gif);
+}
+.extra {
+color : #898989;
+}
+.copytext {
+color : #898989;
+}
+p {
+color : #c8aa5d;
+font : 10px Verdana;
+background-color : transparent;
+margin-top : 8px;
+border-top : 1px solid #898989;
+}
+table#footer div {
+border-top : 1px solid #000000;
+background-color : transparent;
+}

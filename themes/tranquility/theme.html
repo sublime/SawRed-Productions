@@ -1,0 +1,143 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="<{$xoops_langcode}>" lang="<{$xoops_langcode}>">
+<head>
+<meta http-equiv="content-type" content="text/html; charset=<{$xoops_charset}>" />
+<meta http-equiv="content-language" content="<{$xoops_langcode}>" />
+<meta name="robots" content="<{$xoops_meta_robots}>" />
+<meta name="keywords" content="<{$xoops_meta_keywords}>" />
+<meta name="description" content="<{$xoops_meta_description}>" />
+<meta name="rating" content="<{$xoops_meta_rating}>" />
+<meta name="author" content="<{$xoops_meta_author}>" />
+<meta name="copyright" content="<{$xoops_meta_copyright}>" />
+<meta name="generator" content="XOOPS" />
+<{if $is_redirect == 1}>
+ <meta http-equiv="Refresh" content="<{$time}>; url=<{$url}>" />
+<{/if}>
+<title><{$xoops_pagetitle}>:&nbsp;<{$xoops_sitename}></title>
+<link href="<{$xoops_url}>/favicon.ico" rel="SHORTCUT ICON" />
+<link rel="stylesheet" type="text/css" media="screen" href="<{$xoops_url}>/xoops.css" />
+<link rel="stylesheet" type="text/css" media="screen" href="<{$xoops_themecss}>" />
+<!-- RMV: added module header -->
+<{$xoops_header}>
+<{$xoops_module_header}>
+<script type="text/javascript">
+<!--
+<{$xoops_js}>
+//-->
+</script>
+</head>
+<body>
+<table align="center" width="100%" cellpadding="0" cellspacing="0" class="head_table">
+  	<tr> 
+		<td width="100%" style="background: url(<{$xoops_imageurl}>images/tranquility_04.jpg) repeat-x;"><a href="<{$xoops_url}>" alt=""><img src="<{$xoops_imageurl}>images/tranquility_03.jpg" alt="" border="" /></a></td>
+    <td width="100%" align="right"><img src="<{$xoops_imageurl}>images/tranquility_05.jpg" alt="" border="" /></td>
+	</tr>
+</table>
+<table align="center" width="100%" cellpadding="0" cellspacing="0" class="nav_table">
+  	<tr> 
+  	<td><img src="<{$xoops_imageurl}>images/tranquility_08.jpg" alt="" border="" /></td>
+		<td width="100%" style="background: url(<{$xoops_imageurl}>images/tranquility_09.jpg) repeat-x;"><div style="background-image: url(<{$xoops_imageurl}>images/nav_bg.gif); background-repeat: repeat-x;" class="nav_links">
+		<a href="#">These</a>
+		<a href="#">Links</a>
+		<a href="#">Are</a>
+		<a href="#">Customizable</a>
+		<a href="#">Examples</a>
+		</div></td>
+    <td width="100%" align="right"><img src="<{$xoops_imageurl}>images/tranquility_11.jpg" alt="" border="" /></td>
+	</tr>
+</table>
+<table align="center" cellpadding="0" cellspacing="0" class="body_table">
+<tr>
+		<td>
+<!--XOOPS CONTENT-->
+<table border="0" cellspacing="0" cellpadding="0" id="Main" align="center">
+  <tr> 	<{if $xoops_lblocks}>
+    <td id="leftcolumn" width="150">
+	  <!-- Start left blocks loop -->
+		<{foreach item=block from=$xoops_lblocks}>
+			<{include file="$xoops_theme/blocks/theme_blockleft.html"}>
+		<{/foreach}>
+      <!-- End left blocks loop --> </td>
+<{/if}>
+    <td id="centercolumn"><!-- Display center blocks if any -->
+
+<{if $xoops_showcblock == 1}>
+      <table width="100%" cellspacing="0">
+        <tr>
+          <td id="centerLcolumn" width="50%"> <!-- Start center-left blocks loop -->
+<{foreach item=block from=$xoops_clblocks}> <{include file="$xoops_theme/blocks/theme_blockcenter_l.html"}> <{/foreach}>
+            <!-- End center-left blocks loop --> </td>
+          <td id="centerRcolumn" width="50%"> <!-- Start center-right blocks loop -->
+<{foreach item=block from=$xoops_crblocks}> <{include file="$xoops_theme/blocks/theme_blockcenter_r.html"}> <{/foreach}>
+            <!-- End center-right blocks loop --> </td>
+        </tr>
+        <tr>
+          <td id="centerCcolumn" colspan="2"> <!-- Start center-center blocks loop -->
+<{foreach item=block from=$xoops_ccblocks}> <{include file="$xoops_theme/blocks/theme_blockcenter_c.html"}> <{/foreach}>
+            <!-- End center-center blocks loop --> </td>
+        </tr>
+      </table>
+<{/if}>
+      <!-- End display center blocks -->
+<{if $xoops_contents}> 
+<table width="100%" cellpadding="0" cellspacing="0">
+<tr>
+<td><img src="<{$xoops_imageurl}>images/tranquility_15.jpg" width="12" height="43" alt=""/></td>
+<td class="blockT" width="100%"><div class="blockTitle" style="padding-top:15px;"><{$xoops_pagetitle}></div></td>
+<td><img src="<{$xoops_imageurl}>images/tranquility_17.jpg" width="12" height="43" alt=""/></td>
+</tr>
+</table>
+<table width="100%" border="0" cellspacing="0" cellpadding="0" style="margin-top:-15px;">
+<tr>
+<td class="lrep" height="26"></td>
+<td><div id="content"> <{$xoops_contents}> </div></td>
+<td class="rrep" height="26"></td>
+</tr>
+<tr>
+<td><img src="<{$xoops_imageurl}>images/tranquility_24.jpg" width="12" height="16" alt="" /></td>
+<td class="brep" height="12"></td>
+<td><img src="<{$xoops_imageurl}>images/tranquility_27.jpg" width="12" height="16" alt="" /></td>
+</tr>
+</table>
+<{/if}>
+<{if $xoops_showcblock == 1}>
+      <table width="100%" cellspacing="0">
+        <tr>
+          <td id="centerBCcolumn" colspan="2"> <!-- Start center-center blocks loop -->
+<{foreach item=block from=$xoBlocks.page_bottomcenter}> <{include file="$xoops_theme/blocks/theme_blockcenter_c.html"}> <{/foreach}>
+            <!-- End center-center blocks loop --> </td>
+        </tr>
+        <tr>
+          <td id="centerBLcolumn" width="50%"> <!-- Start center-left blocks loop -->
+<{foreach item=block from=$xoBlocks.page_bottomleft}> <{include file="$xoops_theme/blocks/theme_blockcenter_l.html"}> <{/foreach}>
+            <!-- End center-left blocks loop --> </td>
+          <td id="centerBRcolumn" width="50%"> <!-- Start center-right blocks loop -->
+<{foreach item=block from=$xoBlocks.page_bottomright}> <{include file="$xoops_theme/blocks/theme_blockcenter_r.html"}> <{/foreach}>
+            <!-- End center-right blocks loop --> </td>
+        </tr>
+      </table>
+<{/if}> </td>
+<{if $xoops_showrblock == 1}>
+    <td id="rightcolumn" width="150"> <!-- Start right blocks loop -->
+<{foreach item=block from=$xoops_rblocks}> <{include file="$xoops_theme/blocks/theme_blockright.html"}> <{/foreach}>
+      <!-- End right blocks loop --> </td>
+<{/if}> </tr>
+</table>
+<!--END XOOPS CONTENT-->
+<table id="footer" align="center" width="100%" cellpadding="0" cellspacing="0">
+  	<tr> 
+  	<td><img src="<{$xoops_imageurl}>images/tranquility_03f.jpg" alt="" border="" /></td>
+		<td align="left" width="100%" style="background: url(<{$xoops_imageurl}>images/tranquility_04.jpg) repeat-x;">
+		<div align="center" style="padding-top:30px;"><{$xoops_banner}></div>
+		<p align="center"><{$xoops_footer}></p>
+		<!--Thank you for not removing this copyright-->
+		<p align="center" style="color: #fff; font-weight: 700;">Design &copy;2008&nbsp;<a href="http://www.sublimedesign.org/">Sublime Design</a></p>
+		<!--Thank you for not removing this copyright--></td>
+    <td width="100%"><img src="<{$xoops_imageurl}>images/tranquility_05.jpg" alt="" border="" /></td>
+	</tr>
+</table>
+</td>
+</tr>
+</table>
+</body>
+</html>
