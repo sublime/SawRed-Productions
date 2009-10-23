@@ -1,0 +1,142 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="<{$xoops_langcode}>">
+<head>
+<!-- Custom Smarty -->
+<{assign var=theme_name value=$xoTheme->folderName}>
+<{includeq file="$theme_name/theme_functions.php"}>
+<!--Metadata-->
+	<title><{$xoops_sitename}> - <{if $xoops_pagetitle !=''}><{$xoops_pagetitle}><{/if}></title>
+	<meta http-equiv="content-type" content="text/html; charset=<{$xoops_charset}>" />
+	<meta http-equiv="content-language" content="<{$xoops_langcode}>" />
+	<meta name="robots" content="<{$xoops_meta_robots}>" />
+	<meta name="keywords" content="<{$xoops_meta_keywords}>" />
+	<meta name="description" content="<{$xoops_meta_description}>" />
+	<meta name="rating" content="<{$xoops_meta_rating}>" />
+	<meta name="author" content="<{$xoops_meta_author}>" />
+	<meta name="copyright" content="<{$xoops_meta_copyright}>" />
+	<meta name="generator" content="ImpressCMS" />
+<!-- Favicon -->
+  <link href="<{$xoops_url}>/favicon.ico"  type="image/ico" rel="shortcut icon" />
+<!-- Stylesheet & IE Hax-->
+	<link rel="stylesheet" type="text/css" media="all" title="Style sheet" href="<{$xoops_themecss}>" />
+	<link rel="alternate stylesheet" type="text/css" media="all" title="gray" href="<{$xoops_imageurl}>gray.css" />
+	<link rel="alternate stylesheet" type="text/css" media="all" title="blue" href="<{$xoops_imageurl}>blue.css" />
+	<link rel="alternate stylesheet" type="text/css" media="all" title="tan" href="<{$xoops_imageurl}>tan.css" />
+	<link rel="alternate stylesheet" type="text/css" media="all" title="green" href="<{$xoops_imageurl}>green.css" />
+	<link rel="alternate stylesheet" type="text/css" media="all" title="copper" href="<{$xoops_imageurl}>copper.css" />
+<!-- Module Header -->
+<{$xoops_module_header}>
+<script type="text/javascript" src="<{$xoops_imageurl}>styleswitcher.js"></script>
+</head>
+<body>
+<!--Header & Navigation-->
+<div id="header">
+<h1><a href="<{$xoops_url}>"><{$xoops_sitename}></a></h1>
+<div id="nav">
+<a href="#">Sample Link</a><a href="#">Sample Link</a><a href="#">Sample Link</a><a href="#">Sample Link</a>
+</div>
+<div class="switch">Styles:
+<a style="color:#3e4047;" title="gray" onclick="setActiveStyleSheet('gray'); return false;" href="#">&diams;</a> 
+<a style="color:#323b5a;" title="blue" onclick="setActiveStyleSheet('blue'); return false;" href="#">&diams;</a> 
+<a style="color:#746A4C;" title="tan" onclick="setActiveStyleSheet('tan'); return false;" href="#">&diams;</a>
+<a style="color:#4F5B44;" title="green" onclick="setActiveStyleSheet('green'); return false;" href="#">&diams;</a>
+<a style="color:#621E11;" title="copper" onclick="setActiveStyleSheet('copper'); return false;" href="#">&diams;</a>
+</div> 
+</div>
+<!--Page Wrapper Start-->
+<div id="wrapper">
+<!--Center Column-->
+<div id="centercolumn">
+<!--Top Blockage-->
+<{if $cl_blocks or $cc_blocks or $cr_blocks}>
+  <div id="topblocks">
+    <{if $cc_blocks}>
+      <div class="topcenter">
+      <{foreach item=block from=$cc_blocks}>
+        <{include file="$xoops_theme/blockszone.html"}>
+      <{/foreach}>
+      </div>
+    <{/if}>
+    <{if $cl_blocks}>
+      <div class="topleft">
+      <{foreach item=block from=$cl_blocks}>
+        <{include file="$xoops_theme/blockszone.html"}>
+      <{/foreach}>
+      </div>
+    <{/if}>
+    <{if $cr_blocks}>
+      <div class="topright">
+      <{foreach item=block from=$cr_blocks}>
+        <{include file="$xoops_theme/blockszone.html"}>
+      <{/foreach}>
+      </div>
+    <{/if}>
+	</div>
+<{/if}>
+<!--Content-->
+<{if $main_content}>
+  <div id="content">
+    <{$main_content}>
+  </div>
+<{/if}>
+<!--Bottom Blockage-->
+<{if $bl_blocks or $bc_blocks or $br_blocks}>
+  <div id="bottomblocks">
+    <{if $bl_blocks}>
+      <div class="botleft">
+      <{foreach item=block from=$bl_blocks}>
+        <{include file="$xoops_theme/blockszone.html"}>
+      <{/foreach}>
+      </div>
+    <{/if}>
+    <{if $bc_blocks}>
+      <div class="botcenter">
+      <{foreach item=block from=$bc_blocks}>
+        <{include file="$xoops_theme/blockszone.html"}>
+      <{/foreach}>
+      </div>
+    <{/if}>
+    <{if $br_blocks}>
+      <div class="botright">
+      <{foreach item=block from=$br_blocks}>
+        <{include file="$xoops_theme/blockszone.html"}>
+      <{/foreach}>
+      </div>
+    <{/if}>
+	</div>
+<{/if}>
+<!--End Center Column-->
+</div>
+<!--Left Blockage-->
+<{if $l_blocks}>
+  <div id="leftcolumn">
+      <{foreach item=block from=$l_blocks}>
+        <div class="leftblocks">
+        <{includeq file="$xoops_theme/blockszone.html"}> 
+        </div>
+      <{/foreach}>
+  </div>
+<{/if}>
+<!--Right Blockage-->
+<{if $r_blocks}>
+  <div id="rightcolumn">
+      <{foreach item=block from=$r_blocks}>
+        <div class="rightblocks">
+        <{includeq file="$xoops_theme/blockszone.html"}> 
+        </div>
+      <{/foreach}>
+  </div>
+<{/if}>
+<!--End Wrapper-->
+</div>
+<div class="clear"></div>
+<div id="footer">
+	<div class="footer"><{$footer}></div>
+	<div class="clear"></div>
+	<div class="banner"><{$banner}></div>
+</div>
+<!--Thank you for not removing this copyright-->
+<div id="copy"><{$SubCopy}></div>
+<!--Thank you for not removing this copyright-->
+</body>
+</html>

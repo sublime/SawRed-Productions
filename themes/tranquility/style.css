@@ -1,0 +1,246 @@
+body {
+	font-family: Verdana;	
+	color: #bbb;
+	margin: 0;	
+	padding: 0;	
+	font-size: 10px;
+	background-color: #D3CEC8;
+}
+
+hr {
+	color: #BBB; 
+	height:1px;
+}
+.lrep {
+background-image : url(images/tranquility_19.jpg);
+background-repeat : repeat-y;
+height : 100%;
+}
+.rrep {
+background-image : url(images/tranquility_21.jpg);
+background-repeat : repeat-y;
+height : 100%;
+}
+.brep {
+background-image : url(images/tranquility_25.jpg);
+background-repeat : repeat-x;
+width : 100%;
+}
+a {
+	color: #bbb; 
+	text-decoration: none; 
+	font-weight: bold; 
+	background-color: transparent;
+}
+	
+a:hover {
+	color: #bbb;
+}
+#Main {
+background-color: transparent;
+padding-left: 25px;
+padding-right: 25px;
+}
+h1 {}
+h2 {}
+h3 {}
+h4 {}
+h5 {}
+
+ul {
+	margin: 0px;
+	padding: 0px;
+	list-style: square inside;
+	text-align: left;
+	color: #777;
+	line-height: 18px;
+}
+li {font-family: Verdana;
+	color: #777;
+}
+li a{font-family: Verdana;
+	font-size: 9px;
+}
+
+
+textarea, select, input  {
+	font-family: Verdana;
+	background-color: #494846;
+	color: #bbb;
+	font-size: 9px;
+	border-top: 1px solid #bbb;
+	border-right: 1px solid #777;
+	border-left: 1px solid #bbb;
+	border-bottom: 1px solid #777;
+	margin-top: 1px;
+}
+
+textarea {
+	width: 100%;
+	overflow: auto;
+}
+
+
+TR, TD {
+	font-family: Verdana, Tahoma, Arial;
+	font-size: 10px;
+	color: #bbb;
+	padding: 0px; vertical-align: top;
+}
+
+.head_table {
+padding-top: 15px;
+padding-left:25px;
+padding-right:25px;
+}
+
+.nav_table {
+	width: 100%;
+padding-left:25px;
+padding-right:25px;
+}
+.nav_links {
+	color: #fff;
+	text-transform: uppercase;
+	text-align: center;
+	height: 41px;
+	padding-top: 15px;
+}
+
+.nav_links a {
+	padding-right: 25px;
+	color: #bbb;
+	text-transform: uppercase;
+}
+.nav_links a:hover {
+	padding-right: 25px;
+	padding-top: 10px;
+	text-align: center;
+	color: #bbb;
+	text-transform: uppercase;
+}
+
+td#leftcolumn, td#rightcolumn, td#centerCcolumn, td#centerBCcolumn, td#centerLcolumn,
+td#centerBLcolumn, td#centerRcolumn, td#centerBRcolumn {
+	font-size:9px;
+	background-color: transparent;
+	color: #777;
+}
+td#leftcolumn div.blockTitle, td#rightcolumn div.blockTitle,
+td#centerCcolumn div.blockTitle, td#centerBCcolumn div.blockTitle,
+td#centerLcolumn div.blockTitle, td#centerBLcolumn div.blockTitle,
+td#centerRcolumn div.blockTitle, td#centerBRcolumn div.blockTitle, div.blockTitle {
+	font-family: verdana, arial;
+	font-size: 1.3em;
+	color: #fff;
+  text-align: center;
+	font-weight: bold;
+  background: url(images/tranquility_16.jpg) repeat-x;
+  width: 100%;
+  height: 43px;
+
+}
+td#leftcolumn div.blockContent, td#rightcolumn div.blockContent, td#centerCcolumn div.blockContent,
+td#centerBCcolumn div.blockContent, td#centerLcolumn div.blockContent, td#centerBLcolumn div.blockContent,
+td#centerRcolumn div.blockContent, td#centerBRcolumn div.blockContent, #content {
+	color: #bbb;
+	font-size: 11px;
+	font-size: 11px;
+	text-align: left;
+	background: #494846;
+	padding:3px;
+}
+
+#footer {
+	margin-top: 6px;
+	padding-left:25px;
+	padding-right:25px;
+}
+
+.odd {
+font-size : 12px;
+border-left : 1px solid #151515;
+border-right : 2px solid #0d0d0d;
+border-top : 1px solid #151515;
+border-bottom : 2px solid #0d0d0d;
+padding: 3px;
+}
+.even {
+font-size : 12px;
+border-left : 1px solid #151515;
+border-right : 2px solid #0d0d0d;
+border-top : 1px solid #151515;
+border-bottom : 2px solid #0d0d0d;
+background-color : #292929;
+padding: 3px;
+}
+tr.head td {
+border-left : 1px solid #151515;
+border-right : 1px solid #0d0d0d;
+border-top : 1px solid #151515;
+border-bottom : 0 solid #0d0d0d;
+font-size : 12px;
+background-color : #0d0d0d;
+}
+.comText {
+font-family : arial, "lucida console", sans-serif;
+font-size : 13px;
+}
+.comUserStat {
+font-family : arial, "lucida console", sans-serif;
+font-size : 13px;
+font-weight : 700;
+}
+.comUserRankText {
+font-family : arial, "lucida console", sans-serif;
+font-size : 14px;
+font-weight : 700;
+}
+.xoopsCode {
+overflow : auto;
+border : 1px solid #151515;
+margin : 5px;
+padding : 5px;
+}
+.xoopsQuote {
+overflow : auto;
+border : 1px solid #151515;
+margin : 5px;
+}
+td.head {
+background-color : #292929;
+border-left : 2px solid #181818;
+border-right : 2px solid #181818;
+border-top : 2px solid #181818;
+border-bottom : 2px solid #181818;
+padding:5px;
+}
+tr.even td {
+font-size : 12px;
+border-left : 1px solid #151515;
+border-right : 1px solid #0d0d0d;
+border-top : 1px solid #151515;
+border-bottom : 1px solid #0d0d0d;
+}
+tr.odd td {
+font-size : 12px;
+border-left : 1px solid #151515;
+border-right : 1px solid #0d0d0d;
+border-top : 1px solid #151515;
+border-bottom : 1px solid #0d0d0d;
+}
+
+#mainmenu a.highlight, #usermenu a.highlight {
+background-color: transparent;
+display: block;
+}
+
+#usermenu a, #mainmenu a {
+background-color: transparent;
+display: block;
+padding-bottom: 3px;
+}
+
+.xbanner {
+margin-top: 30px;
+}

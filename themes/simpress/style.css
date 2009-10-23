@@ -1,0 +1,265 @@
+
+body {
+font-family : Georgia, Times, "Times New Roman", serif;
+color : #555;
+margin : 0;
+padding : 0;
+font-size : 15px;
+background-color : #fff;
+}
+hr {
+color : #555;
+height : 1px;
+}
+a {
+color : #2583ad;
+text-decoration : none;
+font-weight : 100;
+background-color : transparent;
+}
+a:hover {
+color : #d54e21;
+}
+#Main {
+background-color : transparent;
+width : 80%;
+}
+.wrapper {
+width : 100%;
+}
+ul {
+margin : 0;
+padding : 0;
+list-style : square inside;
+text-align : left;
+color : #777;
+line-height : 18px;
+}
+li {
+font-family : Verdana;
+color : #777;
+}
+li a {
+font-family : Verdana;
+font-size : 9px;
+}
+textarea, select, input {
+font-family : Georgia, Times, "Times New Roman", serif;
+background-color : #000;
+color : #666;
+font-size : 9px;
+border-top : 1px solid #ccc;
+border-right : 1px solid #ccc;
+border-left : 1px solid #ccc;
+border-bottom : 1px solid #ccc;
+margin-top : 1px;
+font-size : 10px;
+background-color : #f5f5f5;
+padding-top : 0;
+padding-right : 4px;
+padding-bottom : 0;
+padding-left : 4px;
+}
+input:hover {
+color : #d54e21;
+border : 1px solid #535353;
+}
+input#rememberme {
+border : 0;
+}
+div.head_search {
+margin-top : 5px;
+float : right;
+padding-right : 25px;
+}
+.head_search input, .head_search input:hover {
+background-color : #5a5a5a;
+border : 1px solid #666666;
+padding : 3px;
+margin-right : 5px;
+color : #aaaaaa;
+float : left;
+}
+.body_table {
+width: 100%;
+}
+.nav_table textarea {
+width : 80%;
+overflow : auto;
+}
+TR, TD {
+font-family : Georgia, Times, "Times New Roman", serif;
+font-size : 10px;
+color : #555;
+padding : 0;
+vertical-align : top;
+}
+.head_table {
+background-color : #464646;
+}
+.head_content {
+width : 80%;
+}
+.nav_table {
+padding-top : 20px;
+width : 80%;
+border-bottom : 1px solid #c6d9e9;
+}
+.head_links {
+font-family : Verdana, Arial, Helvetica, sans-serif;
+color : #333;
+text-align : right;
+padding-top : 75px;
+padding-bottom : 5px;
+}
+.sub_login {
+width : 50%;
+margin-right : 150px;
+}
+.head_links a {
+font-family : Verdana, Arial, Helvetica, sans-serif;
+font-size : 14px;
+padding-right : 25px;
+color : #999;
+}
+.head_links a:hover {
+font-family : Verdana, Arial, Helvetica, sans-serif;
+padding-top : 10px;
+text-align : center;
+color : #fff;
+}
+.nav_links {
+font-family : Georgia, Times, "Times New Roman", serif;
+color : #555;
+text-align : left;
+background-color : transparent;
+font-size : 36px;
+padding-top : 10px;
+padding-bottom : 15px;
+}
+.nav_links h4 {
+font-family : Georgia, Times, "Times New Roman", serif;
+color : #555;
+background-color : transparent;
+font-size : 36px;
+margin : 0;
+font-weight : 100;
+}
+.nav_links a {
+font-size : 14px;
+padding-right : 25px;
+color : #999;
+}
+.nav_links a:hover {
+padding-right : 25px;
+padding-top : 10px;
+text-align : center;
+color : #fff;
+}
+td#leftcolumn, td#rightcolumn, td#centerCcolumn, td#centerBCcolumn, td#centerLcolumn, td#centerBLcolumn, td#centerRcolumn, td#centerBRcolumn {
+font-size : 9px;
+background-color : transparent;
+padding-right : 10px;
+padding-left : 10px;
+color : #777;
+
+}
+td#leftcolumn div.blockTitle, td#rightcolumn div.blockTitle, td#centerCcolumn div.blockTitle, td#centerBCcolumn div.blockTitle, td#centerLcolumn div.blockTitle, td#centerBLcolumn div.blockTitle, td#centerRcolumn div.blockTitle, td#centerBRcolumn div.blockTitle {
+font-family : Verdana, Arial, Helvetica, sans-serif;
+font-size : 14px;
+color : #333;
+text-align : left;
+font-weight : bold;
+padding-left : 5px;
+padding-top : 10px;
+width : 100%;
+}
+td#leftcolumn div.blockContent, td#rightcolumn div.blockContent, td#centerCcolumn div.blockContent, td#centerBCcolumn div.blockContent, td#centerLcolumn div.blockContent, td#centerBLcolumn div.blockContent, td#centerRcolumn div.blockContent, td#centerBRcolumn div.blockContent {
+color : #555;
+font-size : 15px;
+text-align : left;
+padding : 5px;
+}
+#footer {
+margin-top : 6px;
+}
+.odd {
+font-size : 11px;
+background-color : #e6f7f9;
+}
+.even {
+font-size : 11px;
+background-color : #e6f7f9;
+}
+tr.head td {
+border-left : 1px solid #151515;
+border-right : 1px solid #0d0d0d;
+border-top : 1px solid #151515;
+border-bottom : 0 solid #0d0d0d;
+font-size : 12px;
+background-color : #0d0d0d;
+}
+.comText {
+font-family : verdana, arial;
+font-size : 13px;
+}
+.comUserStat {
+font-family : verdana, arial;
+font-size : 13px;
+font-weight : 700;
+}
+.comUserRankText {
+font-family : verdana, arial;
+font-size : 14px;
+font-weight : 700;
+}
+.xoopsCode {
+overflow : auto;
+border : 1px solid #151515;
+margin : 5px;
+padding : 5px;
+}
+.xoopsQuote {
+overflow : auto;
+border : 1px solid #151515;
+margin : 5px;
+}
+td.head {
+background-color : #cbecf1;
+font-size : 11px;
+padding-bottom : 3px;
+padding-top : 3px;
+padding-left : 1px;
+}
+tr.even td {
+font-size : 12px;
+}
+tr.odd td {
+font-size : 12px;
+}
+#mainmenu a, #usermenu a {
+background-color : transparent;
+display : block;
+font-size : 12px;
+font-weight : 700;
+}
+#usermenu a, #mainmenu a {
+font-family : Verdana, Arial, Helvetica, sans-serif;
+background-color : transparent;
+display : block;
+padding-bottom : 3px;
+font-size : 12px;
+font-weight : 700;
+}
+.xbanner {
+margin-top : 30px;
+}
+TH {
+background-color : #464646;
+color : #999;
+font-size : 12px;
+font-weight : 700;
+}
+.foot {
+background-color : #464646;
+}

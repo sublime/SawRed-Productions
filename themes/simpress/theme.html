@@ -1,0 +1,165 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="<{$xoops_langcode}>" lang="<{$xoops_langcode}>">
+<head>
+<meta http-equiv="content-type" content="text/html; charset=<{$xoops_charset}>" />
+<meta http-equiv="content-language" content="<{$xoops_langcode}>" />
+<meta name="robots" content="<{$xoops_meta_robots}>" />
+<meta name="keywords" content="<{$xoops_meta_keywords}>" />
+<meta name="description" content="<{$xoops_meta_description}>" />
+<meta name="rating" content="<{$xoops_meta_rating}>" />
+<meta name="author" content="<{$xoops_meta_author}>" />
+<meta name="copyright" content="<{$xoops_meta_copyright}>" />
+<meta name="generator" content="XOOPS" />
+<{if $is_redirect == 1}>
+ <meta http-equiv="Refresh" content="<{$time}>; url=<{$url}>" />
+<{/if}>
+<title><{$xoops_pagetitle}>:&nbsp;<{$xoops_sitename}></title>
+<link href="<{$xoops_url}>/favicon.ico" rel="SHORTCUT ICON" />
+<link rel="stylesheet" type="text/css" media="screen" href="<{$xoops_url}>/xoops.css" />
+<link rel="stylesheet" type="text/css" media="screen" href="<{$xoops_themecss}>" />
+<!-- RMV: added module header -->
+<{$xoops_header}>
+<{$xoops_module_header}>
+<script type="text/javascript">
+<!--
+<{$xoops_js}>
+//-->
+</script>
+</head>
+<body>
+<table width="100%" cellpadding="0" cellspacing="0" class="head_table" align="center">
+  	<tr> 
+	<td>
+	<table width="80%" cellpadding="0" cellspacing="0" class="head_content" align="center">
+		<tr>
+			<td><a href="<{$xoops_url}>"><img src="<{$xoops_url}>images/logo.gif" alt="" border="0" align="left"/></a></td>
+			<td align="right">
+			<div class="head_search">
+			<form action="<{$xoops_url}>/search.php" method="get">
+  			<input type="text" name="query" size="34" value="Search <{$xoops_sitename}>" onblur="this.value = this.value || this.defaultValue;" onfocus="this.value == this.defaultValue &amp;&amp; (this.value = '');" /><input type="hidden" name="action" value="results" /><input type="submit" value="Go" />
+			</form>
+			</div>
+			<div class="head_links">
+				<a href="#">These</a>
+				<a href="#">Links</a>
+				<a href="#">Are</a>
+				<a href="#">Customizable</a>
+				<a href="#">Examples</a>
+			</div>
+			</td>
+		</tr>
+	</table>
+	</td>
+	</tr>
+</table>
+<table align="center" width="100%" cellpadding="0" cellspacing="0" class="nav_table">
+  	<tr> 
+		<td>
+		<div class="nav_links">
+<h4><{$xoops_pagetitle}></h4>
+		</div>
+		</td>
+<{if !$xoops_isuser}>
+		<td class="sub_login">
+		<form style="padding-top: 30px;" action="<{$xoops_url}>/user.php" method="post">
+    &nbsp;Username&nbsp;
+    <input type="text" name="uname" size="12" value="" maxlength="25" />
+    &nbsp;Password&nbsp;
+    <input type="password" name="pass" size="12" maxlength="32" />
+    <input type="hidden" name="xoops_redirect" value="<{$xoops_requesturi}>" />
+    <input type="hidden" name="op" value="login" />
+    <input type="submit" value="Log in" />
+    <input name="rememberme" id="rememberme" class="rememberme" type="checkbox" checked="checked" value="On" /> Remember me
+</form>
+<a href="<{$xoops_url}>/user.php#lost" title="<{$block.lang_lostpass}>"><{$block.lang_lostpass}></a>
+
+<{if $block.registration }>
+<br /><br />
+<a href="<{$xoops_url}>/register.php" title="<{$block.lang_registernow}>"><{$block.lang_registernow}></a>
+<{/if}>
+</td>
+<{/if}>
+	</tr>
+</table>
+<table align="center" cellpadding="0" cellspacing="0" class="body_table">
+<tr>
+		<td>
+<!--XOOPS CONTENT-->
+<table border="0" cellspacing="0" cellpadding="0" id="Main" align="center">
+
+  <tr>
+    <td id="centercolumn"><!-- Display center blocks if any -->
+
+<{if $xoops_showcblock == 1}>
+      <table width="100%" cellspacing="0">
+        <tr>
+          <td id="centerLcolumn" width="50%"> <!-- Start center-left blocks loop -->
+<{foreach item=block from=$xoops_clblocks}> <{include file="$xoops_theme/blocks/theme_blockcenter_l.html"}> <{/foreach}>
+            <!-- End center-left blocks loop --> </td>
+          <td id="centerRcolumn" width="50%"> <!-- Start center-right blocks loop -->
+<{foreach item=block from=$xoops_crblocks}> <{include file="$xoops_theme/blocks/theme_blockcenter_r.html"}> <{/foreach}>
+            <!-- End center-right blocks loop --> </td>
+        </tr>
+        <tr>
+          <td id="centerCcolumn" colspan="2"> <!-- Start center-center blocks loop -->
+<{foreach item=block from=$xoops_ccblocks}> <{include file="$xoops_theme/blocks/theme_blockcenter_c.html"}> <{/foreach}>
+            <!-- End center-center blocks loop --> </td>
+        </tr>
+      </table>
+<{/if}>
+      <!-- End display center blocks -->
+      <div id="content"> <{$xoops_contents}> </div>
+<{if $xoops_showcblock == 1}>
+      <table width="100%" cellspacing="0">
+        <tr>
+          <td id="centerBCcolumn" colspan="2"> <!-- Start center-center blocks loop -->
+<{foreach item=block from=$xoBlocks.page_bottomcenter}> <{include file="$xoops_theme/blocks/theme_blockcenter_c.html"}> <{/foreach}>
+            <!-- End center-center blocks loop --> </td>
+        </tr>
+        <tr>
+          <td id="centerBLcolumn" width="50%"> <!-- Start center-left blocks loop -->
+<{foreach item=block from=$xoBlocks.page_bottomleft}> <{include file="$xoops_theme/blocks/theme_blockcenter_l.html"}> <{/foreach}>
+            <!-- End center-left blocks loop --> </td>
+          <td id="centerBRcolumn" width="50%"> <!-- Start center-right blocks loop -->
+<{foreach item=block from=$xoBlocks.page_bottomright}> <{include file="$xoops_theme/blocks/theme_blockcenter_r.html"}> <{/foreach}>
+            <!-- End center-right blocks loop --> </td>
+        </tr>
+      </table>
+<{/if}> </td>
+ 	<{if $xoops_lblocks}>
+    <td id="leftcolumn" width="150">
+	  <!-- Start left blocks loop -->
+		<{foreach item=block from=$xoops_lblocks}>
+			<{include file="$xoops_theme/blocks/theme_blockleft.html"}>
+		<{/foreach}>
+      <!-- End left blocks loop --> </td>
+<{/if}>
+<{if $xoops_showrblock == 1}>
+    <td id="rightcolumn" width="150"> <!-- Start right blocks loop -->
+<{foreach item=block from=$xoops_rblocks}> <{include file="$xoops_theme/blocks/theme_blockright.html"}> <{/foreach}>
+      <!-- End right blocks loop --> </td>
+<{/if}> </tr>
+</table>
+<!--END XOOPS CONTENT-->
+</td>
+</tr>
+</table>
+<table class="foot" width="100%" cellpadding="0" cellspacing="0">
+	<tr>
+		<td align="center">
+			<div class="xbanner"><{$xoops_banner}></div>
+		</td>
+	</tr>
+</table>
+<table class="foot" width="100%" cellpadding="0" cellspacing="0">
+	<tr>
+		<td>
+		<p align="center" style="color: #fff;"><{$xoops_footer}></p>
+		<!--Thank you for not removing this copyright-->
+		<p align="center" style="color: #fff; font-weight: 700;">Design &copy;2008&nbsp;<a href="http://www.sublimedesign.org/">Sublime Design</a>&nbsp;Inspired&nbsp;by&nbsp;<a href="http://www.wordpress.org/">WordPress</a></p>
+		<!--Thank you for not removing this copyright-->
+		</td>
+	</tr>
+</table>
+</body>
+</html>
